@@ -77,53 +77,6 @@ func NewUnionStore(snapshot Snapshot) UnionStore {
 	}
 }
 
-type lazyMemBuffer struct {
-	mb MemBuffer
-}
-
-func (lmb *lazyMemBuffer) Get(k Key) ([]byte, error) {
-	if lmb.mb == nil {
-		return nil, ErrNotExist
-	}
-
-	return lmb.mb.Get(k)
-}
-
-func (lmb *lazyMemBuffer) Set(key Key, value []byte) error {
-	if lmb.mb == nil {
-		lmb.mb = p.get()
-	}
-
-	return lmb.mb.Set(key, value)
-}
-
-func (lmb *lazyMemBuffer) Delete(k Key) error {
-	if lmb.mb == nil {
-		lmb.mb = p.get()
-	}
-
-	return lmb.mb.Delete(k)
-}
-
-func (lmb *lazyMemBuffer) Seek(k Key) (Iterator, error) {
-	if lmb.mb == nil {
-		lmb.mb = p.get()
-	}
-
-	return lmb.mb.Seek(k)
-}
-
-func (lmb *lazyMemBuffer) Release() {
-	if lmb.mb == nil {
-		return
-	}
-
-	lmb.mb.Release()
-
-	p.put(lmb.mb)
-	lmb.mb = nil
-}
-
 // Get implements the Retriever interface.
 func (us *unionStore) Get(k Key) ([]byte, error) {
 	v, err := us.MemBuffer.Get(k)

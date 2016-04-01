@@ -34,7 +34,7 @@ type BufferStore struct {
 func NewBufferStore(r Retriever) *BufferStore {
 	return &BufferStore{
 		r:         r,
-		MemBuffer: &lazyMemBuffer{},
+		MemBuffer: NewRBTreeBuffer(),
 	}
 }
 

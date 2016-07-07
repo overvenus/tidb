@@ -10,9 +10,11 @@
 #export DH_VERBOSE=1
 
 PKG=tidb
-USR=$(CURDIR)/debian/$(PKG)/usr
-USRBIN=$(USR)/bin
-USRLIB=$(USR)/lib/pingcap/$(PKG)
+BUILD_ROOT=$(CURDIR)/debian/$(PKG)
+USR=/usr
+USR_BIN=$(USR)/bin
+USR_LIB=$(USR)/lib
+PKG_DIR=pingcap/$(PKG)
 
 configure: configure-stamp
 configure-stamp:
@@ -39,13 +41,13 @@ install: build
 	dh_prep
 	dh_installdirs
 
-	mkdir -m 755 -p $(USRBIN)
-	mkdir -m 755 -p $(USRLIB)
+	mkdir -m 755 -p $(BUILD_ROOT)/$(USR_BIN)
+	mkdir -m 755 -p $(BUILD_ROOT)/$(USR_LIB)/$(PKG_DIR)
 
-	install -m 755 $(CURDIR)/tidb $(USRLIB)
-	install -m 755 $(CURDIR)/ticl $(USRLIB)
-	ln -s /usr/lib/pingcap/$(PKG)/tidb $(USRBIN)/tidb
-	ln -s /usr/lib/pingcap/$(PKG)/ticl $(USRBIN)/ticl
+	install -m 755 $(CURDIR)/tidb $(BUILD_ROOT)/$(USR_LIB)/$(PKG_DIR)
+	install -m 755 $(CURDIR)/ticl $(BUILD_ROOT)/$(USR_LIB)/$(PKG_DIR)
+	ln -s $(USR_LIB)/$(PKG_DIR)/tidb $(BUILD_ROOT)/$(USR_BIN)/tidb
+	ln -s $(USR_LIB)/$(PKG_DIR)/ticl $(BUILD_ROOT)/$(USR_BIN)/ticl
 
 # Build architecture-independent files here.
 binary-indep: build install

@@ -9,7 +9,7 @@ Vcs-Git: git@github.com:pingcap/tidb.git
 Vcs-Browser: https://github.com/pingcap/tidb
 
 Package: tidb
-Architecture: any
+Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Distributed SQL database.
  Inspired by the design of Google F1, TiDB supports the best features of both

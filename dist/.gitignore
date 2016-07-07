@@ -6,3 +6,4 @@ tidb
 *.log
 *.substvars
 *-stamp
+*.upload

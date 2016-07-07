@@ -24,4 +24,5 @@ clean-deb:
 	-rm *.tar.gz
 	-rm *.changes
 	-rm *.dsc
+	-rm *.upload
 	-rm -rf $(DEBIAN_DIR)

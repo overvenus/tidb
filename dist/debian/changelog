@@ -1,0 +1,5 @@
+tidb (0.0.1~beta20160630-1) trusty; urgency=low
+
+  * Initial release
+
+ -- Neil Shen <overvenus@gmail.com>  Wed, 06 Jul 2016 20:32:24 +0800

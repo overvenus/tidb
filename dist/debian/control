@@ -1,0 +1,16 @@
+Source: tidb
+Section: database
+Priority: optional
+Maintainer: Neil Shen <overvenus@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://www.pingcap.com
+Vcs-Git: git@github.com:pingcap/tidb.git
+Vcs-Browser: https://github.com/pingcap/tidb
+
+Package: tidb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Distributed SQL database.
+ Inspired by the design of Google F1, TiDB supports the best features of both
+ traditional RDBMS and NoSQL.

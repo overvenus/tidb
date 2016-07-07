@@ -1,0 +1,8 @@
+ticl
+tidb
+*.changes
+*.dsc
+*.tar.gz
+*.log
+*.substvars
+*-stamp

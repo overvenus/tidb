@@ -39,7 +39,7 @@ require (
 	github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2
 	github.com/pierrec/lz4 v2.5.2+incompatible // indirect
 	github.com/pingcap/badger v1.5.1-0.20200908111422-2e78ee155d19
-	github.com/pingcap/br v4.0.0-beta.2.0.20201014031603-5676c8fdad1a+incompatible
+	github.com/pingcap/br v4.0.0-beta.2.0.20201224074159-1a527fbbd5f4+incompatible
 	github.com/pingcap/check v0.0.0-20200212061837-5e12011dc712
 	github.com/pingcap/errors v0.11.5-0.20201126102027-b0a155152ca3
 	github.com/pingcap/failpoint v0.0.0-20200702092429-9f69995143ce
@@ -49,7 +49,7 @@ require (
 	github.com/pingcap/log v0.0.0-20201112100606-8f1e84a3abc8
 	github.com/pingcap/parser v0.0.0-20201222091346-02c8ff27d0bc
 	github.com/pingcap/sysutil v0.0.0-20201130064824-f0c8aa6a6966
-	github.com/pingcap/tidb-lightning v4.0.9-0.20201106041742-a1ac97827a27+incompatible
+	github.com/pingcap/tidb-lightning v4.0.10-0.20201228094953-1c04266816c3+incompatible
 	github.com/pingcap/tidb-tools v4.0.9-0.20201127090955-2707c97b3853+incompatible
 	github.com/pingcap/tipb v0.0.0-20201209065231-aa39b1b86217
 	github.com/prometheus/client_golang v1.5.1
@@ -58,7 +58,6 @@ require (
 	github.com/shirou/gopsutil v2.20.6+incompatible
 	github.com/sirupsen/logrus v1.6.0
 	github.com/soheilhy/cmux v0.1.4
-	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/tiancaiamao/appdash v0.0.0-20181126055449-889f96f722a2
 	github.com/tikv/pd v1.1.0-beta.0.20201125070607-d4b90eee0c70
 	github.com/twmb/murmur3 v1.1.3
@@ -89,3 +88,5 @@ require (
 )
 
 go 1.13
+
+replace github.com/cockroachdb/pebble => github.com/cockroachdb/pebble v0.0.0-20201023120638-f1224da22976

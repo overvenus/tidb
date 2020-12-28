@@ -159,8 +159,10 @@ github.com/cockroachdb/errors v1.2.4 h1:Lap807SXTH5tri2TivECb/4abUkMZC9zRoLarvcK
 github.com/cockroachdb/errors v1.2.4/go.mod h1:rQD95gz6FARkaKkQXUksEje/d9a6wBJoCr5oaCLELYA=
 github.com/cockroachdb/logtags v0.0.0-20190617123548-eb05cc24525f h1:o/kfcElHqOiXqcou5a3rIlMc7oJbMQkeLk0VQJ7zgqY=
 github.com/cockroachdb/logtags v0.0.0-20190617123548-eb05cc24525f/go.mod h1:i/u985jwjWRlyHXQbwatDASoW0RMlZ/3i9yJHE2xLkI=
-github.com/cockroachdb/pebble v0.0.0-20200617141519-3b241b76ed3b h1:YHjo2xnqFCeFa0CdxEccHfUY1/DnXPAZdZt0+s/Mvdg=
-github.com/cockroachdb/pebble v0.0.0-20200617141519-3b241b76ed3b/go.mod h1:crLnbSFbwAcQNs9FPfI1avHb5BqVgqZcr4r+IzpJ5FM=
+github.com/cockroachdb/pebble v0.0.0-20201023120638-f1224da22976 h1:gGjhleKSWZCZFrhQSesjg8spRD+/p8vjwdNEGUv8Ovg=
+github.com/cockroachdb/pebble v0.0.0-20201023120638-f1224da22976/go.mod h1:BbtTitvfmE0eZNcncJgJw5BlQhskTzgZgoISnY+8s6k=
+github.com/cockroachdb/redact v0.0.0-20200622112456-cd282804bbd3 h1:2+dpIJzYMSbLi0587YXpi8tOJT52qCOI/1I0UNThc/I=
+github.com/cockroachdb/redact v0.0.0-20200622112456-cd282804bbd3/go.mod h1:BVNblN9mBWFyMyqK1k3AAiSxhvhfK2oOZZ2lK+dpvRg=
 github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd/go.mod h1:sE/e/2PUdi/liOCUjSTXgM1o87ZssimdTWN964YiIeI=
 github.com/codahale/hdrhistogram v0.9.0 h1:9GjrtRI+mLEFPtTfR/AZhcxp+Ii8NZYWq5104FbZQY0=
 github.com/codahale/hdrhistogram v0.9.0/go.mod h1:sE/e/2PUdi/liOCUjSTXgM1o87ZssimdTWN964YiIeI=
@@ -642,6 +644,8 @@ github.com/pingcap/badger v1.5.1-0.20200908111422-2e78ee155d19 h1:IXpGy7y9HyoShA
 github.com/pingcap/badger v1.5.1-0.20200908111422-2e78ee155d19/go.mod h1:LyrqUOHZrUDf9oGi1yoz1+qw9ckSIhQb5eMa1acOLNQ=
 github.com/pingcap/br v4.0.0-beta.2.0.20201014031603-5676c8fdad1a+incompatible h1:RMx7D+dQtUTUZjelJyV0WwYr3GFxrjsSarFXhV2SWzI=
 github.com/pingcap/br v4.0.0-beta.2.0.20201014031603-5676c8fdad1a+incompatible/go.mod h1:ymVmo50lQydxib0tmK5hHk4oteB7hZ0IMCArunwy3UQ=
+github.com/pingcap/br v4.0.0-beta.2.0.20201224074159-1a527fbbd5f4+incompatible h1:I1O7jVSYothDyClBlQMIHqbyMB7aTyYIFMwR9gUmUTA=
+github.com/pingcap/br v4.0.0-beta.2.0.20201224074159-1a527fbbd5f4+incompatible/go.mod h1:ymVmo50lQydxib0tmK5hHk4oteB7hZ0IMCArunwy3UQ=
 github.com/pingcap/check v0.0.0-20190102082844-67f458068fc8/go.mod h1:B1+S9LNcuMyLH/4HMTViQOJevkGiik3wW2AN9zb2fNQ=
 github.com/pingcap/check v0.0.0-20191107115940-caf2b9e6ccf4/go.mod h1:PYMCGwN0JHjoqGr3HrZoD+b8Tgx8bKnArhSq8YVzUMc=
 github.com/pingcap/check v0.0.0-20191216031241-8a5a85928f12/go.mod h1:PYMCGwN0JHjoqGr3HrZoD+b8Tgx8bKnArhSq8YVzUMc=
@@ -702,8 +706,8 @@ github.com/pingcap/sysutil v0.0.0-20201130064824-f0c8aa6a6966 h1:JI0wOAb8aQML0vA
 github.com/pingcap/sysutil v0.0.0-20201130064824-f0c8aa6a6966/go.mod h1:EB/852NMQ+aRKioCpToQ94Wl7fktV+FNnxf3CX/TTXI=
 github.com/pingcap/tidb v1.1.0-beta.0.20200423094549-0ad7ce6cdae6/go.mod h1:KJXj2xHYfl1x4zcusC2JEANzVci+ietFOMh/CAmrYdw=
 github.com/pingcap/tidb-insight v0.3.1/go.mod h1:HZ6cGBYxViftTKLbl/V4moRol79bifZzI9ImGavJms0=
-github.com/pingcap/tidb-lightning v4.0.9-0.20201106041742-a1ac97827a27+incompatible h1:y6cwuJJo8tLeHjgjODpwCSqNAv1g+9WUtcsFOHu/7ag=
-github.com/pingcap/tidb-lightning v4.0.9-0.20201106041742-a1ac97827a27+incompatible/go.mod h1:UrN2l06neiEfkass87Tjvv5JFIMsOMb2DT7P7s+fwMc=
+github.com/pingcap/tidb-lightning v4.0.10-0.20201228094953-1c04266816c3+incompatible h1:VOa/lRaRFn+W2CkH0z6O9m8NoKlLuDhSNnXuDnxTN7M=
+github.com/pingcap/tidb-lightning v4.0.10-0.20201228094953-1c04266816c3+incompatible/go.mod h1:UrN2l06neiEfkass87Tjvv5JFIMsOMb2DT7P7s+fwMc=
 github.com/pingcap/tidb-tools v3.0.13+incompatible/go.mod h1:XGdcy9+yqlDSEMTpOXnwf3hiTeqrV6MN/u1se9N8yIM=
 github.com/pingcap/tidb-tools v4.0.0-beta.1.0.20200306084441-875bd09aa3d5+incompatible/go.mod h1:XGdcy9+yqlDSEMTpOXnwf3hiTeqrV6MN/u1se9N8yIM=
 github.com/pingcap/tidb-tools v4.0.0-rc.1.0.20200514040632-f76b3e428e19+incompatible/go.mod h1:XGdcy9+yqlDSEMTpOXnwf3hiTeqrV6MN/u1se9N8yIM=

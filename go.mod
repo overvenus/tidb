@@ -49,7 +49,7 @@ require (
 	github.com/pingcap/log v0.0.0-20201112100606-8f1e84a3abc8
 	github.com/pingcap/parser v0.0.0-20201222091346-02c8ff27d0bc
 	github.com/pingcap/sysutil v0.0.0-20201130064824-f0c8aa6a6966
-	github.com/pingcap/tidb-lightning v4.0.10-0.20201228094953-1c04266816c3+incompatible
+	github.com/pingcap/tidb-lightning v4.0.10-0.20201229091213-1f02abce059e+incompatible
 	github.com/pingcap/tidb-tools v4.0.9-0.20201127090955-2707c97b3853+incompatible
 	github.com/pingcap/tipb v0.0.0-20201209065231-aa39b1b86217
 	github.com/prometheus/client_golang v1.5.1
